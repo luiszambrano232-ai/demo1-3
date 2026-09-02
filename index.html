@@ -1,197 +1,674 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AdriSpaOnails1 - Manicure, pedicure y lifting con atención personalizada.">
-  <title>AdriSpaOnails1 | Belleza & Cuidado</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AdriSpaonails | Manicure a domicilio</title>
+
+    <meta name="description" content="Manicure, pedicure y lifting a domicilio en Santiago. Atención personalizada con más de 20 años de experiencia.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="header">
-    <a class="brand" href="#inicio">
-      <span class="brand-mark">A</span>
-      <span>
-        <strong>AdriSpaOnails1</strong>
-        <small>beauty · nails · lifting</small>
-      </span>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">AS</span>
+
+                <div>
+                    <strong>AdriSpaonails</strong>
+                    <small>Belleza a domicilio</small>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#agenda">Agenda</a>
+            </nav>
+
+            <a
+                href="https://wa.me/56993145126"
+                target="_blank"
+                class="btn btn-header"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                Reservar hora
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        <i class="fa-solid fa-sparkles"></i>
+                        Manicure a domicilio en Santiago
+                    </span>
+
+                    <h1>
+                        Belleza y cuidado
+                        <span>en la comodidad de tu hogar</span>
+                    </h1>
+
+                    <p>
+                        Disfruta una experiencia personalizada de manicure,
+                        pedicure y lifting sin salir de casa.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="https://wa.me/56993145126?text=Hola%20Adriana,%20quisiera%20agendar%20una%20hora."
+                            target="_blank"
+                            class="btn btn-primary"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Agenda tu hora
+                        </a>
+
+                        <a href="#servicios" class="btn btn-secondary">
+                            Ver servicios
+                        </a>
+
+                    </div>
+
+                    <div class="hero-features">
+
+                        <div>
+                            <strong>+20</strong>
+                            <span>Años de experiencia</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>Atención personalizada</span>
+                        </div>
+
+                        <div>
+                            <strong>🏠</strong>
+                            <span>Servicio a domicilio</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image-wrapper">
+
+                    <div class="hero-image-card">
+
+                        <img
+                            src="img/adriana-principal.jpg"
+                            alt="Adriana - Manicurista a domicilio"
+                            class="hero-image"
+                        >
+
+                        <div class="floating-card floating-card-top">
+                            <span class="floating-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+
+                            <div>
+                                <strong>Atención personalizada</strong>
+                                <small>Tu momento para consentirte</small>
+                            </div>
+                        </div>
+
+                        <div class="floating-card floating-card-bottom">
+                            <span class="floating-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+
+                            <div>
+                                <strong>Santiago</strong>
+                                <small>Servicio a domicilio</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICIOS -->
+        <section class="section services" id="servicios">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">Nuestros servicios</span>
+
+                    <h2>
+                        Un momento pensado
+                        <span>especialmente para ti</span>
+                    </h2>
+
+                    <p>
+                        Servicios profesionales realizados con dedicación,
+                        cuidado y atención personalizada.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-hand-sparkles"></i>
+                        </div>
+
+                        <h3>Manicure</h3>
+
+                        <p>
+                            Cuidado completo de tus manos y uñas para lograr
+                            un acabado elegante y duradero.
+                        </p>
+
+                        <ul>
+                            <li>Esmaltado permanente</li>
+                            <li>Kapping</li>
+                            <li>Soft gel</li>
+                            <li>Nail art</li>
+                        </ul>
+
+                        <a
+                            href="https://wa.me/56993145126?text=Hola%20Adriana,%20quisiera%20consultar%20por%20manicure."
+                            target="_blank"
+                        >
+                            Consultar servicio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card featured">
+
+                        <span class="popular-badge">Más solicitado</span>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+
+                        <h3>Pedicure</h3>
+
+                        <p>
+                            Dale a tus pies el cuidado que merecen con una
+                            atención delicada y profesional.
+                        </p>
+
+                        <ul>
+                            <li>Limpieza y cuidado</li>
+                            <li>Esmaltado</li>
+                            <li>Hidratación</li>
+                            <li>Terminación profesional</li>
+                        </ul>
+
+                        <a
+                            href="https://wa.me/56993145126?text=Hola%20Adriana,%20quisiera%20consultar%20por%20pedicure."
+                            target="_blank"
+                        >
+                            Consultar servicio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+
+                        <h3>Lifting de pestañas</h3>
+
+                        <p>
+                            Realza la curvatura natural de tus pestañas para
+                            conseguir una mirada más definida.
+                        </p>
+
+                        <ul>
+                            <li>Efecto natural</li>
+                            <li>Mayor curvatura</li>
+                            <li>Mirada definida</li>
+                            <li>Atención personalizada</li>
+                        </ul>
+
+                        <a
+                            href="https://wa.me/56993145126?text=Hola%20Adriana,%20quisiera%20consultar%20por%20lifting%20de%20pestañas."
+                            target="_blank"
+                        >
+                            Consultar servicio
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERÍA -->
+        <section class="section gallery-section" id="galeria">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">Mis trabajos</span>
+
+                    <h2>
+                        Diseños que
+                        <span>hablan por sí solos</span>
+                    </h2>
+
+                    <p>
+                        Algunos de los trabajos realizados para mis clientas.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item gallery-large">
+                        <img src="img/unias-1.jpg" alt="Manicure AdriSpaonails">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/unias-2.jpg" alt="Diseño de uñas">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/unias-3.jpg" alt="Esmaltado permanente">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/unias-4.jpg" alt="Manicure profesional">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/unias-5.jpg" alt="Nail art">
+                    </div>
+
+                    <div class="gallery-item gallery-wide">
+                        <img src="img/unias-6.jpg" alt="Manicure elegante">
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-button">
+
+                    <a
+                        href="https://www.instagram.com/adrispaonails1/"
+                        target="_blank"
+                        class="btn btn-secondary"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                        Ver más en Instagram
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE MI -->
+        <section class="section about" id="sobre-mi">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <div class="about-photo">
+                        <img
+                            src="img/adriana.jpg"
+                            alt="Adriana manicurista profesional"
+                        >
+                    </div>
+
+                    <div class="experience-card">
+                        <strong>+20</strong>
+                        <span>Años de experiencia</span>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="section-label">Sobre mí</span>
+
+                    <h2>
+                        Hola, soy
+                        <span>Adriana</span>
+                    </h2>
+
+                    <p class="about-intro">
+                        Manicurista profesional dedicada a resaltar la belleza
+                        de cada mujer a través de una atención cercana,
+                        delicada y personalizada.
+                    </p>
+
+                    <p>
+                        Mi objetivo es que puedas disfrutar un momento para ti,
+                        sin preocuparte por desplazamientos ni tiempos de espera.
+                        Llevo toda la experiencia y comodidad directamente
+                        hasta tu hogar.
+                    </p>
+
+                    <div class="about-benefits">
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Atención personalizada</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Materiales profesionales</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Servicio a domicilio</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Diseños modernos</span>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://wa.me/56993145126"
+                        target="_blank"
+                        class="btn btn-primary"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Hablar con Adriana
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCIA -->
+        <section class="experience-section">
+
+            <div class="container">
+
+                <div class="experience-content">
+
+                    <span class="small-title">
+                        Tu momento comienza aquí
+                    </span>
+
+                    <h2>
+                        Más que un manicure,
+                        <span>una experiencia para consentirte</span>
+                    </h2>
+
+                    <p>
+                        Relájate y disfruta de un servicio pensado para que
+                        puedas verte y sentirte increíble.
+                    </p>
+
+                    <a
+                        href="https://wa.me/56993145126?text=Hola%20Adriana,%20quisiera%20agendar%20una%20hora."
+                        target="_blank"
+                        class="btn btn-light"
+                    >
+                        Agendar ahora
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENDA -->
+        <section class="section booking" id="agenda">
+
+            <div class="container">
+
+                <div class="booking-card">
+
+                    <div class="booking-content">
+
+                        <span class="section-label">Agenda tu hora</span>
+
+                        <h2>
+                            Regálate un
+                            <span>momento para ti</span>
+                        </h2>
+
+                        <p>
+                            Escríbeme por WhatsApp y coordinamos juntas el
+                            servicio, horario y ubicación.
+                        </p>
+
+
+                        <div class="contact-list">
+
+                            <div>
+                                <span class="contact-icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </span>
+
+                                <div>
+                                    <small>WhatsApp</small>
+                                    <strong>+56 9 9314 5126</strong>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <span class="contact-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+
+                                <div>
+                                    <small>Instagram</small>
+                                    <strong>@adrispaonails1</strong>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <span class="contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <div>
+                                    <small>Ubicación</small>
+                                    <strong>Santiago de Chile</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="booking-box">
+
+                        <span class="booking-icon">
+                            <i class="fa-solid fa-calendar-heart"></i>
+                        </span>
+
+                        <h3>¿Lista para consentirte?</h3>
+
+                        <p>
+                            Consulta disponibilidad y reserva directamente
+                            conmigo.
+                        </p>
+
+                        <a
+                            href="https://wa.me/56993145126?text=Hola%20Adriana,%20vi%20tu%20página%20web%20y%20quisiera%20agendar%20una%20hora."
+                            target="_blank"
+                            class="btn btn-primary btn-full"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Reservar por WhatsApp
+                        </a>
+
+                        <small>
+                            Te responderé para confirmar disponibilidad.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo logo-footer">
+                    <span class="logo-icon">AS</span>
+
+                    <div>
+                        <strong>AdriSpaonails</strong>
+                        <small>Manicure a domicilio</small>
+                    </div>
+                </a>
+
+                <p>
+                    Belleza, cuidado y comodidad directamente en tu hogar.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Enlaces</h4>
+
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#agenda">Agenda</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h4>Sígueme</h4>
+
+                <div class="social-buttons">
+
+                    <a
+                        href="https://www.instagram.com/adrispaonails1/"
+                        target="_blank"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="https://wa.me/56993145126"
+                        target="_blank"
+                        aria-label="WhatsApp"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>
+                    © 2026 AdriSpaonails · Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a
+        href="https://wa.me/56993145126?text=Hola%20Adriana,%20quisiera%20consultar%20por%20tus%20servicios."
+        target="_blank"
+        class="whatsapp-float"
+        aria-label="Contactar por WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Agenda tu hora</span>
     </a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
 
-    <nav id="nav">
-      <a href="#servicios">Servicios</a>
-      <a href="#trabajos">Trabajos</a>
-      <a href="#agenda">Agenda</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <script src="script.js"></script>
 
-    <a class="btn btn-small desktop-cta" href="#agenda">Agendar hora</a>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-copy">
-        <span class="eyebrow">BELLEZA · CUIDADO · DETALLES</span>
-        <h1>Tu momento de <em>cuidarte.</em></h1>
-        <p>
-          Manicure, pedicure y lifting con atención personalizada para realzar tu estilo
-          y hacerte sentir increíble.
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="#agenda">Reservar ahora</a>
-          <a class="btn btn-outline" href="#trabajos">Ver trabajos</a>
-        </div>
-        <div class="benefits">
-          <span>♡ Atención personalizada</span>
-          <span>✦ Cuidado y detalle</span>
-          <span>⌁ Reserva fácil</span>
-        </div>
-      </div>
-
-      <div class="hero-media">
-        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=85" alt="Manicure elegante">
-        <div class="floating-card">
-          <strong>Agenda tu hora</strong>
-          <span>Rápido y directo por WhatsApp</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="servicios">
-      <div class="section-title">
-        <span class="eyebrow">SERVICIOS</span>
-        <h2>Un cuidado pensado para ti</h2>
-        <p>Selecciona el servicio y consulta disponibilidad directamente desde la agenda.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card">
-          <div class="service-icon">💅</div>
-          <h3>Manicure</h3>
-          <p>Cuidado de manos y uñas con terminaciones delicadas y diseños adaptados a tu estilo.</p>
-          <a href="#agenda" data-service="Manicure">Agendar manicure →</a>
-        </article>
-        <article class="service-card featured">
-          <span class="tag">Más solicitado</span>
-          <div class="service-icon">✨</div>
-          <h3>Pedicure</h3>
-          <p>Cuidado completo de tus pies para lograr una apariencia limpia, cuidada y hermosa.</p>
-          <a href="#agenda" data-service="Pedicure">Agendar pedicure →</a>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">♡</div>
-          <h3>Lifting</h3>
-          <p>Realza tu mirada con un acabado natural, elegante y de bajo mantenimiento.</p>
-          <a href="#agenda" data-service="Lifting">Agendar lifting →</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="gallery-section" id="trabajos">
-      <div class="section-title light">
-        <span class="eyebrow">PORTAFOLIO</span>
-        <h2>Detalles que hablan por sí solos</h2>
-        <p>Una muestra visual para el demo. Luego podemos reemplazarla por fotografías reales de Instagram.</p>
-      </div>
-
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=80" alt="Diseño de uñas">
-        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=80" alt="Manicure">
-        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&q=80" alt="Uñas cuidadas">
-        <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?auto=format&fit=crop&w=900&q=80" alt="Nail art">
-      </div>
-
-      <a class="btn btn-light" href="https://instagram.com/adrispaonails1" target="_blank" rel="noopener">Ver Instagram</a>
-    </section>
-
-    <section class="booking section" id="agenda">
-      <div class="booking-copy">
-        <span class="eyebrow">AGENDA ONLINE</span>
-        <h2>Reservar es muy fácil ♡</h2>
-        <p>Elige tu servicio, fecha y horario. El demo prepara el mensaje automáticamente para WhatsApp.</p>
-
-        <div class="steps">
-          <span><b>1</b> Escoge el servicio</span>
-          <span><b>2</b> Selecciona fecha y hora</span>
-          <span><b>3</b> Envía tu solicitud</span>
-        </div>
-      </div>
-
-      <form class="booking-form" id="bookingForm">
-        <label>
-          Servicio
-          <select id="service" required>
-            <option value="">Selecciona una opción</option>
-            <option>Manicure</option>
-            <option>Pedicure</option>
-            <option>Lifting</option>
-          </select>
-        </label>
-
-        <div class="form-row">
-          <label>
-            Fecha
-            <input type="date" id="date" required>
-          </label>
-          <label>
-            Hora
-            <select id="time" required>
-              <option value="">Seleccionar</option>
-              <option>09:00</option>
-              <option>10:30</option>
-              <option>12:00</option>
-              <option>14:00</option>
-              <option>15:30</option>
-              <option>17:00</option>
-            </select>
-          </label>
-        </div>
-
-        <label>
-          Nombre
-          <input type="text" id="name" placeholder="Tu nombre" required>
-        </label>
-
-        <label>
-          Mensaje adicional
-          <textarea id="notes" rows="3" placeholder="Ej: diseño que deseas, consulta, etc."></textarea>
-        </label>
-
-        <button class="btn btn-full" type="submit">Confirmar por WhatsApp</button>
-        <small class="form-note">* Demo: el número de WhatsApp se cambia por el real antes de publicar.</small>
-      </form>
-    </section>
-
-    <section class="social-strip" id="contacto">
-      <div>
-        <span class="eyebrow">SÍGUENOS</span>
-        <h2>AdriSpaOnails1</h2>
-        <p>Conoce más trabajos, novedades y disponibilidad.</p>
-      </div>
-      <div class="social-actions">
-        <a class="social instagram" href="https://instagram.com/adrispaonails1" target="_blank" rel="noopener">◎ Instagram</a>
-        <a class="social whatsapp" href="https://wa.me/56900000000" target="_blank" rel="noopener">◉ WhatsApp</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="brand footer-brand">
-      <span class="brand-mark">A</span>
-      <span>
-        <strong>AdriSpaOnails1</strong>
-        <small>manicure · pedicure · lifting</small>
-      </span>
-    </div>
-    <p>Demo web · contenido, fotografías, horarios y datos modificables.</p>
-  </footer>
-
-  <a class="floating-whatsapp" href="https://wa.me/56900000000" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
-
-  <script src="script.js"></script>
 </body>
 </html>
