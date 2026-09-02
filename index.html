@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AdriSpaOnails1 - Manicure, pedicure y lifting con atención personalizada.">
+  <title>AdriSpaOnails1 | Belleza & Cuidado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">A</span>
+      <span>
+        <strong>AdriSpaOnails1</strong>
+        <small>beauty · nails · lifting</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+
+    <nav id="nav">
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="btn btn-small desktop-cta" href="#agenda">Agendar hora</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">BELLEZA · CUIDADO · DETALLES</span>
+        <h1>Tu momento de <em>cuidarte.</em></h1>
+        <p>
+          Manicure, pedicure y lifting con atención personalizada para realzar tu estilo
+          y hacerte sentir increíble.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#agenda">Reservar ahora</a>
+          <a class="btn btn-outline" href="#trabajos">Ver trabajos</a>
+        </div>
+        <div class="benefits">
+          <span>♡ Atención personalizada</span>
+          <span>✦ Cuidado y detalle</span>
+          <span>⌁ Reserva fácil</span>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=85" alt="Manicure elegante">
+        <div class="floating-card">
+          <strong>Agenda tu hora</strong>
+          <span>Rápido y directo por WhatsApp</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="section-title">
+        <span class="eyebrow">SERVICIOS</span>
+        <h2>Un cuidado pensado para ti</h2>
+        <p>Selecciona el servicio y consulta disponibilidad directamente desde la agenda.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">💅</div>
+          <h3>Manicure</h3>
+          <p>Cuidado de manos y uñas con terminaciones delicadas y diseños adaptados a tu estilo.</p>
+          <a href="#agenda" data-service="Manicure">Agendar manicure →</a>
+        </article>
+        <article class="service-card featured">
+          <span class="tag">Más solicitado</span>
+          <div class="service-icon">✨</div>
+          <h3>Pedicure</h3>
+          <p>Cuidado completo de tus pies para lograr una apariencia limpia, cuidada y hermosa.</p>
+          <a href="#agenda" data-service="Pedicure">Agendar pedicure →</a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">♡</div>
+          <h3>Lifting</h3>
+          <p>Realza tu mirada con un acabado natural, elegante y de bajo mantenimiento.</p>
+          <a href="#agenda" data-service="Lifting">Agendar lifting →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="trabajos">
+      <div class="section-title light">
+        <span class="eyebrow">PORTAFOLIO</span>
+        <h2>Detalles que hablan por sí solos</h2>
+        <p>Una muestra visual para el demo. Luego podemos reemplazarla por fotografías reales de Instagram.</p>
+      </div>
+
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=80" alt="Diseño de uñas">
+        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=80" alt="Manicure">
+        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&q=80" alt="Uñas cuidadas">
+        <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?auto=format&fit=crop&w=900&q=80" alt="Nail art">
+      </div>
+
+      <a class="btn btn-light" href="https://instagram.com/adrispaonails1" target="_blank" rel="noopener">Ver Instagram</a>
+    </section>
+
+    <section class="booking section" id="agenda">
+      <div class="booking-copy">
+        <span class="eyebrow">AGENDA ONLINE</span>
+        <h2>Reservar es muy fácil ♡</h2>
+        <p>Elige tu servicio, fecha y horario. El demo prepara el mensaje automáticamente para WhatsApp.</p>
+
+        <div class="steps">
+          <span><b>1</b> Escoge el servicio</span>
+          <span><b>2</b> Selecciona fecha y hora</span>
+          <span><b>3</b> Envía tu solicitud</span>
+        </div>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <label>
+          Servicio
+          <select id="service" required>
+            <option value="">Selecciona una opción</option>
+            <option>Manicure</option>
+            <option>Pedicure</option>
+            <option>Lifting</option>
+          </select>
+        </label>
+
+        <div class="form-row">
+          <label>
+            Fecha
+            <input type="date" id="date" required>
+          </label>
+          <label>
+            Hora
+            <select id="time" required>
+              <option value="">Seleccionar</option>
+              <option>09:00</option>
+              <option>10:30</option>
+              <option>12:00</option>
+              <option>14:00</option>
+              <option>15:30</option>
+              <option>17:00</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Nombre
+          <input type="text" id="name" placeholder="Tu nombre" required>
+        </label>
+
+        <label>
+          Mensaje adicional
+          <textarea id="notes" rows="3" placeholder="Ej: diseño que deseas, consulta, etc."></textarea>
+        </label>
+
+        <button class="btn btn-full" type="submit">Confirmar por WhatsApp</button>
+        <small class="form-note">* Demo: el número de WhatsApp se cambia por el real antes de publicar.</small>
+      </form>
+    </section>
+
+    <section class="social-strip" id="contacto">
+      <div>
+        <span class="eyebrow">SÍGUENOS</span>
+        <h2>AdriSpaOnails1</h2>
+        <p>Conoce más trabajos, novedades y disponibilidad.</p>
+      </div>
+      <div class="social-actions">
+        <a class="social instagram" href="https://instagram.com/adrispaonails1" target="_blank" rel="noopener">◎ Instagram</a>
+        <a class="social whatsapp" href="https://wa.me/56900000000" target="_blank" rel="noopener">◉ WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand">
+      <span class="brand-mark">A</span>
+      <span>
+        <strong>AdriSpaOnails1</strong>
+        <small>manicure · pedicure · lifting</small>
+      </span>
+    </div>
+    <p>Demo web · contenido, fotografías, horarios y datos modificables.</p>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/56900000000" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
